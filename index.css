@@ -1,0 +1,83 @@
+/* Write your code here. */
+.bg-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+}
+.heading {
+  font-weight: 600;
+  font-family: "Roboto";
+  font-size: 28px;
+  color: #0f172a;
+}
+.boxes-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.box-name-styling {
+  color: white;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.yellow-small-box {
+  background-color: #fbbf24;
+}
+.blue-medium-box {
+  background-color: #38bdf8;
+}
+.pink-large-box {
+  background-color: #ec4899;
+}
+
+@media screen and (max-width: 768px) {
+  .yellow-small-box {
+    width: 20%;
+    height: 20%;
+  }
+  .blue-medium-box {
+    width: 50%;
+    height: 30%;
+  }
+  .pink-large-box {
+    width: 100%;
+    height: 50%;
+  }
+  .box {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .yellow-small-box {
+    width: 20%;
+    margin-right: 20px;
+    height: 20%;
+  }
+  .blue-medium-box {
+    width: 30%;
+    margin-right: 20px;
+    height: 50%;
+  }
+  .pink-large-box {
+    height: 100%;
+    width: 100%;
+  }
+  .boxes-container {
+    flex-direction: row;
+  }
+}
